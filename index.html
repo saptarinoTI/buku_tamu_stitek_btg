@@ -1,44 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Buku Tamu Kunjungan STITEK Bontang</title>
-    <link rel="shortcut icon" href="logo/facivon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Font -->
+    <title>Buku Tamu Kunjungan | STITEK Bontang</title>
+    <link rel="shortcut icon" href="./logo/facivon.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
-      href="https://api.fontshare.com/v2/css?f[]=general-sans@200,400,500,600,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "426px",
+            // => @media (min-width: 640px) { ... }
+          },
+          extend: {
+            fontFamily: {
+              sans: ["Poppins", "sans-serif"],
+            },
+            colors: {
+              main: "rgba(9, 32, 63, 1)",
+              mainsec: "rgba(83, 120, 149, 1)",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-
   <body>
-    <img src="./logo/Vector.svg" class="body-banner" />
-    <section class="main">
-      <div class="main-left">
-        <img src="./logo/logo-dark.png" class="main-left-img" />
-        <div class="main-left-text">
-          <h1>
-            Buku Tamu Kunjungan <br />
-            <span>Sekolah Tinggi Teknologi</span> Bontang
-          </h1>
-          <p>
-            Silahkan klik atau scan QR Code <br />
-            untuk mengisi form kunjungan. <br />
-          </p>
+    <section class="main bg-gradient-to-r from-main to-mainsec">
+      <!-- <div class="container mx-auto"> -->
+      <div class="md:columns-2 h-full">
+        <!-- <div
+          class="pl-16 h-screen main-left flex flex-col justify-between font-sans text-white"
+        > -->
+        <div class="pl-10 text-white pt-5">
+          <img class="main-left-img w-44" src="./logo/logo-light.png" alt="" />
+          <div class="my-8">
+            <h1
+              class="font-bold text-2xl leading-snug mb-6 sm:font-bold sm:text-5xl sm:leading-tight"
+            >
+              Buku Tamu Kunjungan <br />
+              <span class="font-black tracking-wider">STITEK</span> Bontang
+            </h1>
+            <p class="w-80 font-light text-sm mb-5 sm:mb-6">
+              Silahkan klik atau scan QR Code untuk membuka form kunjungan
+            </p>
+            <a
+              href=""
+              class="px-4 sm:px-6 py-2 text-sm sm:text-base rounded bg-orange-600 hover:bg-orange-700"
+              >Klik disini</a
+            >
+          </div>
+          <div class="main-left-icon flex justify-between w-20 sm:pb-14">
+            <img src="./icon/youtube.svg" alt="" class="w-6" />
+            <img src="./icon/facebook.svg" alt="" class="w-6" />
+            <img src="./icon/instagram.svg" alt="" class="w-5" />
+          </div>
         </div>
-        <!-- <a href="" class="main-left-button">Unduh</a> -->
-      </div>
 
-      <div class="main-right">
-        <div class="main-right-img">
-          <a href="">
-            <img src="./logo/qr-code.svg" />
-          </a>
+        <div class="pl-10 mt-3 sm:h-screen flex sm:justify-end sm:items-end">
+          <div class="bg-white mb-5 mr-5 rounded-md drop-shadow-xl">
+            <img src="./logo/qr-code.svg" alt="" class="w-48" />
+          </div>
         </div>
-        <!-- <a href="" class="main-right-btn">Klik disini</a> -->
+        <!-- </div> -->
       </div>
     </section>
   </body>
