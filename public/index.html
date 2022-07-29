@@ -12,42 +12,48 @@
     />
   </head>
   <body class="bg-gradient-to-r from-main to-mainsec h-screen">
-    <section class="container mx-auto px-10 py-16">
+    <section
+      class="container mx-auto px-10 py-16 md:p-0 md:max-w-none md:columns-2 md:px-6"
+    >
       <!-- Columns Left-->
-      <div class="">
+      <div class="md:h-screen md:flex md:flex-col md:justify-evenly">
         <!-- Image STITEK -->
-        <img src="./img/logo/logo-light.png" alt="" class="w-2/3" />
+        <img src="./img/logo/logo-light.png" alt="" class="w-56 lg:w-7/12" />
         <!-- Main Content -->
-        <div class="text-white font-sans pt-20 pb-14">
-          <h1 class="text-4xl font-semibold leading-snug">
+        <div class="text-white font-sans py-14 md:py-10 lg:py-0">
+          <h1
+            class="text-4xl font-semibold leading-snug lg:text-5xl lg:leading-tight"
+          >
             Buku Tamu Kunjungan <br />
             <span class="font-extrabold tracking-widest">STITEK</span> Bontang
           </h1>
-          <p class="py-10 text-base w-3/4">
+          <p class="py-10 text-base w-3/4 lg:text-lg">
             Silahkan klik atau scan QR Code untuk membuka form kunjungan
           </p>
-          <a href="" class="py-2 px-6 bg-orange-400 rounded shadow-xl"
+          <a
+            href=""
+            class="py-2 px-6 bg-orange-400 rounded shadow-xl hover:bg-orange-500"
             >Klik disini</a
           >
         </div>
         <!-- Icon -->
-        <div class="flex w-28 justify-between">
-          <img src="./img/icon/youtube.svg" alt="" class="w-9" />
-          <img src="./img/icon/facebook.svg" alt="" class="w-8" />
-          <img src="./img/icon/instagram.svg" alt="" class="w-7" />
+        <div class="flex w-28 justify-between lg:w-36">
+          <img src="./img/icon/youtube.svg" alt="" class="w-9 lg:w-11" />
+          <img src="./img/icon/facebook.svg" alt="" class="w-8 lg:w-10" />
+          <img src="./img/icon/instagram.svg" alt="" class="w-7 lg:w-9" />
         </div>
       </div>
 
       <!-- Columns Right -->
-      <div>
+      <div
+        class="flex justify-end md:h-screen md:items-end my-10 md:my-0 md:pb-10"
+      >
         <!-- Image QR Code -->
-        <div class="flex justify-end my-10">
-          <img
-            src="./img/logo/qr-code.svg"
-            alt=""
-            class="w-2/3 bg-gray-200 rounded-md shadow-xl opacity-90"
-          />
-        </div>
+        <img
+          src="./img/logo/qr-code.svg"
+          alt=""
+          class="w-1/2 bg-gray-200 rounded-md shadow-xl opacity-90 md:w-3/4 lg:w-7/12"
+        />
       </div>
     </section>
   </body>
